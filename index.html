@@ -1,40 +1,15 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title>National Platform</title>
-        <link rel="stylesheet" href="./css/pure-min.css"/>
-        <link rel="stylesheet" href="./css/main.css"/>
-        <script src="./js/dep/jquery-3.2.1.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
-        <script src="./js/dep/socket.io.slim.js"></script>
-        <script src="./js/main.js"></script>
+        <title>Stupid Render</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
     </head>
-    <body class="pure-g">
-        <div id="background_container"></div>
-        <div class="pure-u-2-5">
-            <div id="tree_cnt"></div>
-        </div>
-        <div class="pure-u-3-5">
-            <div id="title_cnt">
-                <h1>National Platform</h1>
-                <h2>Autumn&grave;17 Moscow</h2>
-                <h3>10 - 12 November</h3>
-            </div>
-            <div id="timer_cnt" class="_hidden">
-                <div>
-                    <h1 id="t_min">00</h1>
-                    <h1>:</h1>
-                    <h1 id="t_sec">00</h1>
-                    <h1>&nbsp;-&nbsp;</h1>
-                    <h1 id="t_event_name">Event start</h1>
-                </div>
-            </div>
-            <div id="logo_cnt">
-                <img src="./img/esn_russia_logo.png">
-            </div>
-        </div>
-        <div id="presenter_cnt" class="_hidden">
-            <h1 id="p_title"></h1>
-            <h1 id="p_name"></h1>
-        </div>
+    <body>
+        <canvas id="main" width="800" height="600"></canvas>
     </body>
 </html>
