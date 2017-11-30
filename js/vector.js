@@ -53,6 +53,14 @@ class Vector {
     length() {
         return Math.sqrt(this.dot(this));
     }
+
+    mirror_over(other) {
+        return other.mul(2 * other.dot(this)).add(this.mul(-1));
+    }
+
+    cos(other) {
+        return this.dot(other) / this.length() / other.length();
+    }
 }
 
 const max = (x, y) => {
